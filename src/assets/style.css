@@ -1,0 +1,50 @@
+
+#background {
+  position: absolute;
+  width: 1500px;
+  height: 548px;
+  left: -3px;
+  top: 0px;
+
+  background: #fde2ff;
+}
+
+#box {
+  position: absolute;
+  width: 1034px;
+  height: 580px;
+  left: 147px;
+  top: 126px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#button-buynow {
+  box-sizing: border-box;
+  color: white;
+
+  position: absolute;
+  width: 259px;
+  height: 42px;
+  left: 577px;
+  top: 618px;
+
+  background: #720060;
+  border-radius: 4px;
+}
+
+#button-nextproduct {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 259px;
+  height: 42px;
+  left: 855px;
+  top: 618px;
+
+  background: #ffffff;
+  border: 3px solid #720060;
+  border-radius: 4px;
+}
