@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div v-else class="container" :class="!isProductAvailable ? 'bg-gray' : product.data.category === 'men\'s clothing' ? 'bg-blue' : 'bg-pink'">
+        <div v-else class="container" :class="!isProductAvailable ? 'bg-gray' : product.data.category === 'men\'s clothing' || 'women\'s clothing' ? 'bg-blue' : 'bg-pink'">
             <div class="overlay">
                 <img src="../assets/bg-shape.svg" alt="background overlay">
             </div>
@@ -94,9 +94,11 @@ export default {
                 this.product = { data }
                 this.isProductAvailable = true;
             } else {
-                this.isProductAvailable = false;
+                // this.isProductAvailable = false;
+                this.getSingleProduct();
             }
 
+            // console.log(this.product);
             this.isLoading = false;
         }
     },
